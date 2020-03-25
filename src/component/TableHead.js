@@ -1,16 +1,23 @@
-import React from "react";
+import React, {Component} from "react";
 
-const TableHead = (props) => {
-    return(
-        <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-        </thead>
-    )
+class TableHead extends Component{
+
+    render() {
+        return(
+
+            <thead>
+            <tr>
+                <th scope="col">{this.props.tablehead.first}</th>
+                <th scope="col">{this.props.tablehead.second}</th>
+                <th scope="col">{this.props.tablehead.third}</th>
+                <th scope="col">{this.props.tablehead.fourth}</th>
+            </tr>
+            </thead>
+        )
+    }
+
+
+
 };
 
 export default TableHead;

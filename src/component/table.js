@@ -16,7 +16,7 @@ class Table extends Component{
         return(
             <div>
                 <table className="table table-striped">
-                    <TableHead tableheade={tableheadvalue}/>
+                    <TableHead tablehead={tableheadvalue}/>
                     <TableBody/>
 
                 </table>

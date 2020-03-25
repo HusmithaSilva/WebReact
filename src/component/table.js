@@ -6,18 +6,11 @@ import TableBody from "./TableBody";
 class Table extends Component{
     render() {
 
-        const tableheadvalue = {
-            first: "No",
-            second: "First name",
-            third: "Last name",
-            fourth: "country"
-        };
-
         return(
             <div>
                 <table className="table table-striped">
-                    <TableHead tablehead={tableheadvalue}/>
-                    <TableBody/>
+                    <TableHead tablehead={this.props.headee}/>
+                    <TableBody tbody={this.props.bode}/>
 
                 </table>
 

@@ -22,6 +22,29 @@ class App extends Component{
   };
 
   render() {
+
+      const tableheadvalue = [ "No", "First name", "Last name", "country"];
+
+      const body = [{
+          first: "1",
+          second: "Husmitha",
+          third: "Silva",
+          fourth: "UK"
+      },
+          {
+              first: "2",
+              second: "Imesh",
+              third: "Silva",
+              fourth: "norway"
+          },
+          {
+              first: "3",
+              second: "Hasindu",
+              third: "perera",
+              fourth: "Russia"
+          }]
+
+
     return(
         <div className={"container"}>
             <div className={"row"}>
@@ -33,7 +56,10 @@ class App extends Component{
 
                     <button className="btn btn-primary" onClick={(event) => this.onClick(event)}>+</button>
 
-                    <Table></Table>
+                    <Table
+                        headee={tableheadvalue}
+                        bode={body}
+                    ></Table>
 
 
                 </div>

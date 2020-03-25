@@ -7,16 +7,25 @@ class TableHead extends Component{
 
             <thead>
             <tr>
-                <th scope="col">{this.props.tablehead.first}</th>
-                <th scope="col">{this.props.tablehead.second}</th>
-                <th scope="col">{this.props.tablehead.third}</th>
-                <th scope="col">{this.props.tablehead.fourth}</th>
+
+                {/*<th scope="col">{this.props.tablehead.second}</th>*/}
+                {/*<th scope="col">{this.props.tablehead.third}</th>*/}
+                {/*<th scope="col">{this.props.tablehead.fourth}</th>*/}
+
+                {
+                    this.props.tablehead.map((value, index) =>{
+                        return(
+                            <th key={index} scope="col">{value}</th>
+                            )
+
+                    })
+                }
+
+
             </tr>
             </thead>
         )
     }
-
-
 
 };
 
